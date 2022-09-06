@@ -1,0 +1,9 @@
+.example-card{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left:20px;
+    background-color: hsla(209, 23%, 22%);
+    border-radius: 0.375rem;
+}
