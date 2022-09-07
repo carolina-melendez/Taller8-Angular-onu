@@ -1,1 +1,19 @@
-<p>detalle works!</p>
+<button mat-raised-button style="color:hsl(209, 23%, 22%) ;"  [routerLink]="['/menu']">Back</button>
+<table *ngFor="let detalle of paisDetalle">
+    <tr>
+        <td>
+            <img src="{{detalle.bandera}}">
+        </td>
+        <td>
+            <p> Nombre del pais: {{detalle.nombrePais}}</p>
+            <p> Nombre Nativo: {{detalle.nombreNativo}}</p>
+            <p>Capital: {{detalle.capital}}</p>
+            <p> Población: {{detalle.poblacion}}</p>
+            <p> Región: {{detalle.region}}</p>
+            <p> Subregión: {{detalle.subregion}}</p>
+            <a *ngFor="let frontera of detalle.fronteras">
+                <button mat-raised-button>{{frontera}}</button>
+            </a>
+        </td>
+    </tr>
+</table>

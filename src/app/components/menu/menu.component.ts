@@ -28,8 +28,8 @@ export class MenuComponent implements OnInit {
             nombrePais: pais.name.common,
             bandera: pais.flags.png,
             region: pais.region,
-            
-            
+            capital:pais.capital,
+            poblacion:pais.population
           };
         });
         console.log(this.paisesList)

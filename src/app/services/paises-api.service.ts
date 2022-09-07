@@ -19,4 +19,15 @@ export class PaisesApiService {
     );
     
   }
+
+  obtenerDetallesPais(codigoPais:any){
+    let urlBase='https://restcountries.com/v3.1/alpha/'+codigoPais;
+    return this.httpClient.get(urlBase)
+    .pipe(
+      map((resultados:any) => {
+        return resultados;
+      })
+    );
+
+  }
 }
